@@ -10,9 +10,37 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style/style.css">
+  <style>
+    #myBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #555;
+      /* background-color: red; */
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      /* background-color: #555; */
+    }
+    .gototop{
+      color: white;
+    }
+    .gototop:hover{
+      background-color: white;
+      color: black;
+    }
+  </style>
 </head>
 
-<body>
+<body id="topabove">
   <nav style="background-color: #4cc9f0" class="navbar navbar-expand-md px-3 py-2 mynavbar sticky-top">
     <a class="navbar-brand nav-divyansh navhead" href="#"><img src="photo/kiet_logo.png" width="120px" alt="" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -38,6 +66,9 @@
       </ul>
     </div>
   </nav>
+
+  <button id="myBtn" title="Go to top"><a style="text-decoration: none;" class="gototop" href="#topabove">TOP</a></button>
+
   <div style="background-color: #38ffd1">
     <div class="container py-3" style="overflow-x: auto;">
       <table class="table table-striped">
