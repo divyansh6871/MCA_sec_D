@@ -17,7 +17,7 @@ a:hover{
     background-color: #f8a38e;
     color: black;
     border-radius: 5px;
-    text-decoration: underline;
+    
 }
 
 @media screen and (max-width:320){
