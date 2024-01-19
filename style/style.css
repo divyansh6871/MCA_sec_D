@@ -1,6 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    color: white;
+}
+
+body{
+    background-color: #1d3557;
 }
 
 .tablefontsize{
@@ -9,20 +14,47 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding-left: 7px;
     padding-right: 7px;
 }
-a:hover{
+/* a:hover{
     background-color: #f8a38e;
     color: black;
     border-radius: 5px;
     
-}
+} */
 
 @media screen and (max-width:320){
 .tablefontsize{
     font-size: 10px;
 }
     
+}
+.box{
+    height: fit-content;
+    position: relative;
+    perspective: 1000px;
+}
+.box .box-img img{
+    transform: rotateY(0);
+    transition: all 0.75s ease-in-out 0s;
+}
+.box:hover .box-img img{
+    transform: rotateY(-90deg);
+}
+.boxcont{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 7px;
+    /* background: rgba(0,0,0,0.7); */
+    width: 100%;
+    height: fit-content;
+    /* color: white; */
+    transform: rotateY(-90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.box:hover .boxcont{
+    transform: rotateY(0);
 }
