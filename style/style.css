@@ -29,7 +29,8 @@ a{
     height: fit-content;
     position: relative;
     perspective: 1000px;
-    height: 330px;
+    /* height: 400px; */
+    height: fit-content;
 }
 .box .box-img img{
     transform: rotateY(0);
