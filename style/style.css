@@ -9,7 +9,7 @@ body{
 }
 
 .tablefontsize{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 a{
@@ -18,12 +18,6 @@ a{
     padding-left: 7px;
     padding-right: 7px;
 }
-/* a:hover{
-    background-color: #f8a38e;
-    color: black;
-    border-radius: 5px;
-    
-} */
 
 @media screen and (max-width:320){
 .tablefontsize{
@@ -35,6 +29,7 @@ a{
     height: fit-content;
     position: relative;
     perspective: 1000px;
+    height: 330px;
 }
 .box .box-img img{
     transform: rotateY(0);
@@ -48,10 +43,8 @@ a{
     top: 10px;
     left: 0;
     padding: 7px;
-    /* background: rgba(0,0,0,0.7); */
     width: 100%;
-    height: fit-content;
-    /* color: white; */
+    height: 200px;
     transform: rotateY(-90deg);
     transition: all 0.5s ease-in-out 0s;
 }
