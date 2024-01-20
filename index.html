@@ -43,7 +43,7 @@
 </head>
 
 <body id="topabove">
-  <nav style="background-color: #4cc9f0" class="navbar navbar-expand-md px-1 py-1 mynavbar sticky-top">
+  <nav style="background-color: #ff9100; font-weight: 500;" class="navbar navbar-expand-md px-1 py-1 mynavbar sticky-top">
     <a class="navbar-brand nav-divyansh navhead" href="#"><img src="photo/kiet_logo.png" width="60px" alt="" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -51,31 +51,31 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav navlist">
         <li class="nav-item">
-          <a class="nav-link nav-home" href="#topabove" style="color: black">Students (1-11)</a>
+          <a class="nav-link nav-home" href="#topabove" style="color: black">(1-11)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-home" href="#second" style="color: black">Students (12-22)</a>
+          <a class="nav-link nav-home" href="#second" style="color: black">(12-22)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-home" href="#third" style="color: black">Students (23-33)</a>
+          <a class="nav-link nav-home" href="#third" style="color: black">(23-33)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-home" href="#fourth" style="color: black">Students (34-44)</a>
+          <a class="nav-link nav-home" href="#fourth" style="color: black">(34-44)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-home" href="#fifth" style="color: black">Students (45-54)</a>
+          <a class="nav-link nav-home" href="#fifth" style="color: black">(45-54)</a>
         </li>
       </ul>
     </div>
+    <button style="margin-right: 5px;" class="btn btn-primary" onclick="backchange()">Mode</button>
   </nav>
+
 
   <button id="myBtn" title="Go to top"><a style="text-decoration: none;" class="gototop"
       href="#topabove">TOP</a></button>
 
   <div class="container-fluid">
     <div class="row p-3">
-
-
 
 
       <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-xs-12 mt-3">
@@ -86,8 +86,15 @@
           <div class="boxcont">
             <div style="text-align: center; font-weight: 600;" class="tablefontsize">
               Abhinav Kajla<br>
-              <img src="photo/email.png" width="40px" alt=""> : kajlabhinav@gmail.com<br><br>
-              <pre><a href="https://www.linkedin.com/in/%E0%A4%9A%E0%A5%8C%E0%A4%A7%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%B5-%E0%A4%95%E0%A4%BE%E0%A4%9C%E0%A4%B2%E0%A4%BE-369a66287/" target="_blank"><br><img src="photo/linked.png" width="40px" alt=""></a>  <a href="https://github.com/kajla2208" target="_blank"><br><img src="photo/github.png" width="40px" alt=""></a>  <a href="https://www.hackerrank.com/profile/kajlabhinav" target="_blank"><br><img src="photo/hackerrank.jpeg" width="40px" alt=""></a>  <a href="https://leetcode.com/kajlabhinav/" target="_blank"><br><img src="photo/leetcode.png" width="40px" alt=""></a></pre>
+              <img src="photo/email.png" width="40px" alt=""> : kajlabhinav@gmail.com<br>
+              <img src="photo/linked.png" width="40px" alt=""> : <a
+                href="https://www.linkedin.com/in/%E0%A4%9A%E0%A5%8C%E0%A4%A7%E0%A4%B0%E0%A5%80-%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%A8%E0%A4%B5-%E0%A4%95%E0%A4%BE%E0%A4%9C%E0%A4%B2%E0%A4%BE-369a66287/" target="_blank">click here</a><br>
+              <img src="photo/github.png" width="40px" alt=""> : <a href="https://github.com/kajla2208"
+                target="_blank">click here</a><br>
+              <img src="photo/hackerrank.jpeg" width="40px" alt=""> : <a
+                href="https://www.hackerrank.com/profile/kajlabhinav" target="_blank">click here</a><br>
+              <img src="photo/leetcode.png" width="40px" alt=""> : <a href="https://leetcode.com/kajlabhinav/"
+                target="_blank">click here</a><br>
               <a href="https://kajla2208.github.io/portfolio/" target="_blank">Online Resume</a>
               <br>+91  7830339114<br>
               abhinav.2325mca1058@kiet.edu
@@ -95,7 +102,6 @@
           </div>
         </div>
       </div>
-
 
 
 
@@ -1498,6 +1504,13 @@
   </table>
   </div>
   </div>
+
+
+  <script>
+    function backchange(){
+      document.querySelector("body").classList.toggle("colorchange");
+    }
+  </script>
 </body>
 
 </html>
